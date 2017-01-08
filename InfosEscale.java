@@ -1,30 +1,63 @@
-/***********************************************************************
- * Module:  InfosEscale.java
- * Author:  simo
- * Purpose: Defines the Class InfosEscale
- ***********************************************************************/
-
+package gestion_de_vols;
 import java.util.*;
+public class InfosEscale extends Aeroport
+{
+	private double heureDepartEscale;
+	private double heureArriveeEscale;
+	public Volcomplet escale;
+	public Aeroport escal;
+	   
+	public double getHeureDepartEscale() 
+	{
+		return heureDepartEscale;
+	}
 
-/** @pdOid 026851d9-81be-4a4c-86a4-72c7ea02d430 */
-public class InfosEscale extends Aeroport {
-   /** @pdOid ea13d831-360f-4777-96ce-dfc1e6bb152c */
-   private float heureDepartEscale;
-   /** @pdOid 06322c78-17d2-4e55-8ce2-b5ed4baa0903 */
-   private float heureArriveeEscale;
-   
-   public Volcomplet escale;
-   public Aeroport escale;
-   
-   /** @pdOid 3fe7204a-83bb-4d5c-bf02-31b47c0ff321 */
-   public Double calculerDuree() {
-      // TODO: implement
-      return null;
-   }
-   
-   /** @pdOid c5413e4b-9328-4bdf-94e2-28a306b11186 */
-   public InfosEscale() {
-      // TODO: implement
-   }
+	public void setHeureDepartEscale(double heureDepartEscale) 
+	{
+		this.heureDepartEscale = heureDepartEscale;
+	}
 
+	public double getHeureArriveeEscale() 
+	{
+		return heureArriveeEscale;
+	}
+
+	public void setHeureArriveeEscale(double heureArriveeEscale) 
+	{
+		this.heureArriveeEscale = heureArriveeEscale;
+	}
+
+	public Volcomplet getEscale() 
+	{
+		return this.escale;
+	}
+
+	public void setEscale(Volcomplet escale) 
+	{
+		this.escale = escale;
+	}
+
+	public Aeroport getEscal() 
+	{
+		return escal;
+	}
+
+	public void setEscal(Aeroport escal) 
+	{
+		this.escal = escal;
+	}
+
+	public double calculerDuree() 
+	{
+	   return heureArriveeEscale-heureDepartEscale;
+	}
+
+	public InfosEscale(String Aeroport,Ville ville,double Depart,double Arrivee,Volcomplet escale) 
+	{
+		super(Aeroport, ville);
+		this.heureDepartEscale = Depart;
+		this.heureArriveeEscale = Arrivee;
+		this.escale = escale;
+	}
 }
+
