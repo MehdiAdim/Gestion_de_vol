@@ -6,6 +6,6 @@
 	- Laila Haggoud
 	- Imane Amini Alaoui
 	- Samira Oumami
-	- Mohamed Baghdadi
+	- Mohamed Barhdadi
 	- Mehdi Adim
 
