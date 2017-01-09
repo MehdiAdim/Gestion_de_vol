@@ -2,6 +2,7 @@ package gestion_de_vols;
 import java.util.*;
 public class Vol 
 {
+	private static int nbrvol;
 	private Date datedepart;
 	private Date datearive;
 	private int idVol;
@@ -10,12 +11,13 @@ public class Vol
 	public Compagnieaerienne[] compagnieaerienne;
 	
 	
-	public Vol(Date datedepart, Date datearive, int idVol, Compagnieaerienne[] compagnieaerienne) {
-		super();
+	public Vol(Date datedepart, Date datearive, int idVol, Compagnieaerienne[] compagnieaerienne) 
+	{
 		this.datedepart = datedepart;
 		this.datearive = datearive;
-		this.idVol = idVol;
+		this.idVol = nbrvol;
 		this.compagnieaerienne = compagnieaerienne;
+		nbrvol++;
 	}
 		
 	public Date getDatedepart() 
