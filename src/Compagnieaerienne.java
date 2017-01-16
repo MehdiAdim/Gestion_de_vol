@@ -17,35 +17,25 @@ public class Compagnieaerienne
 		nbrca++;
 	}
 	
-	
-
 	public int getIdComp() 
 	{
 		return idComp;
 	}
-
-
 
 	public void setIdComp(int idComp) 
 	{
 		this.idComp = idComp;
 	}
 
-
-
 	public String getNomCompAirien() 
 	{
 		return nomCompAirien;
 	}
 
-
-
 	public void setNomCompAirien(String nomCompAirien) 
 	{
 		this.nomCompAirien = nomCompAirien;
 	}
-
-
 
 	public Collection<Volcomplet> getVolcomplet() 
 	{

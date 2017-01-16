@@ -1,21 +1,18 @@
 package gestion_de_vols;
-
 public class Ville 
 {
+	public static int nbrvil;
 	private int idVille;
 	private String nomVille;
 	private int codePostale;
-	   
 	public Aeroport[] aeroport;
 	   
-	   
-	
-	
-	public Ville(int idVille, String nomVille, int codePostale) 
+	public Ville(String nomVille, int codePostale) 
 	{
-		this.idVille = idVille;
+		this.idVille = nbrvil;
 		this.nomVille = nomVille;
 		this.codePostale = codePostale;
+		nbrvil++;
 	}
 
 	public int getIdVille() 
@@ -23,23 +20,28 @@ public class Ville
 		return idVille;
 	}
 
-	public void setIdVille(int idVille) {
+	public void setIdVille(int idVille) 
+	{
 		this.idVille = idVille;
 	}
 
-	public String getNomVille() {
+	public String getNomVille() 
+	{
 		return nomVille;
 	}
 
-	public void setNomVille(String nomVille) {
+	public void setNomVille(String nomVille) 
+	{
 		this.nomVille = nomVille;
 	}
 
-	public int getCodePostale() {
+	public int getCodePostale() 
+	{
 		return codePostale;
 	}
 
-	public void setCodePostale(int codePostale) {
+	public void setCodePostale(int codePostale) 
+	{
 		this.codePostale = codePostale;
 	}
 
